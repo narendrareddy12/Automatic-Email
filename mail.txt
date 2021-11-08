@@ -1,0 +1,7 @@
+import smtplib
+
+server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
+server.login("narendradondeti@gmail.com", "narendra66")
+server.sendmail("narendradondeti@gmail.com","reddynarendradondeti@gmail.com", "hello, where are you?")
+
+server.quit()
